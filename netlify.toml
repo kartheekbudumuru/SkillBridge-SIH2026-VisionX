@@ -1,0 +1,12 @@
+[build]
+  command = "pnpm --filter @workspace/skillbridge run build"
+  publish = "artifacts/skillbridge/dist"
+
+[build.environment]
+  PORT = "5173"
+  BASE_PATH = "/"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
