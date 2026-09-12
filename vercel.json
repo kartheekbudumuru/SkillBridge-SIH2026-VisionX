@@ -1,6 +1,6 @@
 {
   "buildCommand": "pnpm --filter @workspace/skillbridge run build",
   "outputDirectory": "artifacts/skillbridge/dist",
-  "installCommand": "pnpm install",
+  "installCommand": "pnpm install --no-frozen-lockfile",
   "framework": "vite"
 }
